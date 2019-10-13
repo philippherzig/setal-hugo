@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{.Site.LanguageCode}}">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1"
-    />
-    <meta name="robots" content="”noindex,nofollow”" />
-    <link rel="canonical" href="{{.Site.BaseURL}}" />
-    {{ partial "main-style.html" . }} 
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800&display=fallback"
-      rel="stylesheet"
-	/>
-	{{ partial "metadata.html" . }} 
-	{{ partial "favicons.html" . }}
-  </head>
-  <body>
-	{{ block "main" . }} {{ end }} 
-	{{ partial "footer.html" . }} 
-  </body>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1" />
+  <meta name="robots" content="”noindex,nofollow”" />
+  <link rel="canonical" href="{{.Site.BaseURL}}" />
+  {{ partial "main.css" . }}
+  {{ partial "metadata.html" . }}
+  {{ partial "favicons.html" . }}
+</head>
+
+<body>
+  {{ block "main" . }} {{ end }}
+  {{ partial "footer.html" . }}
+</body>
+
 </html>
