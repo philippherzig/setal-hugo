@@ -112,32 +112,6 @@ a {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* fira-sans-500 - latin */
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-display: auto;
-  src: local('Fira Sans Medium'), local('FiraSans-Medium'),
-    url('/fonts/fira-sans-v10-latin-500.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('/fonts/fira-sans-v10-latin-500.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* fira-sans-600 - latin */
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-display: auto;
-  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'),
-    url('/fonts/fira-sans-v10-latin-600.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('/fonts/fira-sans-v10-latin-600.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 /* fira-sans-700 - latin */
 @font-face {
   font-family: 'Fira Sans';
@@ -151,18 +125,7 @@ a {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* fira-sans-800 - latin */
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 800;
-  font-display: auto;
-  src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'),
-    url('/fonts/fira-sans-v10-latin-800.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('/fonts/fira-sans-v10-latin-800.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+
 
 /* ===============================
     Logo
