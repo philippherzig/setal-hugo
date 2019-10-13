@@ -1,7 +1,5 @@
 <style>
-/* ===============================
-    Fixes
-   =============================== */
+/* == Fixes == */
 
 html {
   box-sizing: border-box;
@@ -21,9 +19,7 @@ figure {
   margin: 0;
 }
 
-/* ===============================
-    Colors
-   =============================== */
+/* == Colors == */
 
 :root {
   --font-color: #484848;
@@ -49,9 +45,7 @@ figure {
   }
 }
 
-/* ===============================
-    Main Styles
-   =============================== */
+/* == Main Styles == */
 
 body {
   font-family: 'Fira Sans', sans-serif;
@@ -82,11 +76,8 @@ a {
   color: var(--link-color);
 }
 
-/* ===============================
-      Fonts
-     =============================== */
+/* == Fonts == */
 
-/* fira-sans-300 - latin */
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -99,7 +90,6 @@ a {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* fira-sans-regular - latin */
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -112,7 +102,6 @@ a {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* fira-sans-700 - latin */
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -125,76 +114,7 @@ a {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-
-
-/* ===============================
-    Logo
-   =============================== */
-
-.logo {
-  display: grid;
-  justify-content: center;
-  margin: var(--conent-side-margin) 20px var(--conent-side-margin) 20px;
-  height: 100px;
-}
-
-.logo svg {
-  width: 440px;
-  max-width: 100%;
-}
-
-/* ===============================
-    Carousel
-    =============================== */
-
-.carousel .background {
-  background-image: url("../img/bg_gallery.svg");
-  background-size: 100% 100%;
-  height: 350px;
-}
-
-.carousel .slider {
-  display: grid;
-  grid-auto-flow: column;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  padding-left: 20px;
-  height: 350px;
-  align-items: center;
-}
-
-.carousel .slider::-webkit-scrollbar {
-  display: none;
-}
-
-.carousel .slider figure {
-  padding-right: 20px;
-}
-
-.carousel .slider figure img {
-  border-radius: 20px;
-}
-
-/* ===============================
-   Lead
-   =============================== */
-
-.lead {
-  display: grid;
-  justify-content: center;
-}
-
-.lead p {
-  font-weight: 300;
-  font-size: 1.3em;
-  text-align: center;
-  max-width: 600px;
-  margin: 60px 40px 60px 40px;
-}
-
-/* ===============================
-   Footer
-   =============================== */
+/* == Footer == */
 
 .footer {
   display: grid;
@@ -255,87 +175,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: var(--button-hover-color);
-}
-
-
-
-/* ===============================
-    Detail / Single Page
-   =============================== 
-*/
-
-main {
-  display: grid;
-  justify-content: center
-}
-
-.title h1 {
-  font-size: 3.3em;
-  margin-bottom: 0px;
-  margin-left: var(--conent-side-margin);
-  margin-right: var(--conent-side-margin);
-  max-width: var(--content-max-width);
-}
-
-.title .location {
-  color: var(--font-color-secondary);
-  font-size: 1.3em;
-  margin-left: var(--conent-side-margin);
-  margin-right: var(--conent-side-margin);
-  margin-bottom: 40px;
-  max-width: var(--content-max-width);
-}
-
-.close-button {
-  position: absolute;
-  top: 40px;
-  right: 60px;
-}
-
-.close-button a {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-.close-button a:before,
-.close-button a:after {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  content: '';
-  height: 33px;
-  width: 4px;
-  background-color: var(--font-color);
-}
-
-.close-button a:before {
-  transform: rotate(45deg);
-}
-
-.close-button a:after {
-  transform: rotate(-45deg);
-}
-
-.gallery {
-  margin-left: var(--conent-side-margin);
-  margin-right: var(--conent-side-margin);
-  margin-bottom: var(--conent-side-margin);
-  max-width: var(--content-max-width);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-}
-
-.gallery img {
-  width: 100%;
-}
-
-
-.content {
-  margin-left: var(--conent-side-margin);
-  margin-right: var(--conent-side-margin);
-  margin-bottom: var(--conent-side-margin);
-  max-width: var(--content-max-width);
 }
 
 </style>
