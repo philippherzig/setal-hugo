@@ -28,7 +28,7 @@ figure {
   --button-color: #4CAF50;
   --button-hover-color: #45a049;
   --background-color: white;
-  --conent-side-margin: 40px;
+  --conent-side-margin: 20px;
   --content-max-width: 600px;
 }
 
@@ -40,7 +40,7 @@ figure {
     --button-color: #4CAF50;
     --button-hover-color: #45a049;
     --background-color: white;
-    --conent-side-margin: 40px;
+    --conent-side-margin: 20px;
     --content-max-width: 600px;
   }
 }
