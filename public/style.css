@@ -1,0 +1,286 @@
+/* ===============================
+    Fixes
+   =============================== */
+
+   html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+/* ===============================
+    Colors
+   =============================== */
+
+:root {
+    --font-color: #484848;
+    --font-color-secondary: #7e7e7e;
+    --link-color: #4CAF50;
+    --button-color: #4CAF50;
+    --button-hover-color: #45a049;
+    --background-color: white;
+    --conent-side-margin: 40px;
+    --content-max-width: 640px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-color: #484848;
+        --font-color-secondary: #7e7e7e;
+        --link-color: #4CAF50;
+        --button-color: #4CAF50;
+        --button-hover-color: #45a049;
+        --background-color: white;
+        --conent-side-margin: 40px;
+        --content-max-width: 640px;
+    }
+}
+
+/* ===============================
+    Main Styles
+   =============================== */
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--link-color);
+}
+
+/* ===============================
+    Header
+   =============================== */
+
+#home header {
+    display: grid;
+    margin: var(--conent-side-margin) 20px var(--conent-side-margin) 20px;
+    height: 100px;
+    justify-content: center;
+}
+
+#home header img {
+    width: 440px;
+    max-width: 100%;
+}
+
+/* ===============================
+    Carousel
+    =============================== */
+
+.carousel .background {
+    background-image: url("../img/bg_gallery.svg");
+    background-size: 100% 100%;
+    height: 350px;
+}
+
+.carousel .slider {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 20px;
+    height: 350px;
+    align-items: center;
+}
+
+.carousel .slider::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel .slider figure {
+    padding-right: 20px;
+}
+
+/* ===============================
+   Lead
+   =============================== */
+
+.lead {
+    grid-area: lead;
+    display: grid;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.3em;
+    text-align: center;
+    margin: var(--conent-side-margin);
+}
+
+.lead p {
+    max-width: var(--content-max-width);
+}
+
+/* ===============================
+   Footer
+   =============================== */
+
+.footer {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: grid;
+    justify-content: center;
+    padding: var(--conent-side-margin);
+}
+
+.contact {
+    display: grid;
+    grid-column-gap: 70px;
+    grid-row-gap: 30px;
+}
+
+@media (min-width: 600px) {
+    .contact {
+        grid-template-columns: 3fr 1fr;
+        max-width: 600px;
+    }
+}
+
+address {
+    font-style: normal;
+}
+
+form {
+    display: flex;
+    max-width: 500px;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type=text], select {
+    width: 70%;
+    border-radius: 8px 0 0 8px;
+    box-sizing: border-box;
+    background-color: rgb(132, 150, 149), 238, 236);
+}
+
+input[type=submit] {
+    width: 30%;
+    max-width: 150px;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* ===============================
+    Animations
+   =============================== */
+
+#home, #detail {
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===============================
+    Detail page
+   =============================== */
+
+#detail {
+    display: none;
+    width: 100%;
+    max-width: var(--content-max-width);
+    margin: auto;
+}
+
+#detail header {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#detail header .title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#detail header .title h1 {
+    font-size: 2.0em;
+    margin: 0px;
+}
+
+#detail header .title .location {
+    color: var(--font-color-secondary);
+    font-size: 1.3em;
+}
+
+#detail header a.close {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#detail header a.close:before, #detail header a.close:after {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    content: '';
+    height: 33px;
+    width: 4px;
+    background-color: var(--font-color);
+}
+
+#detail a.close:before {
+    transform: rotate(45deg);
+}
+
+#detail a.close:after {
+    transform: rotate(-45deg);
+}
+
+#detail .title, #detail p, #detail .gallery {
+    margin-left: var(--conent-side-margin);
+    margin-right: var(--conent-side-margin);
+}
+
+#detail .gallery {
+    display: grid;
+    gap: 20px;
+}
+
+#detail .gallery img {
+    width: 100%;
+}
+
+#detail .content {
+    margin-bottom: 80px;
+}

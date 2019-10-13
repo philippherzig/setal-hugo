@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main>
+  <header class="title">
+    <h1>{{.Title}}</h1>
+    <div class="location">{{.Params.location}}</div>
+  </header>
+
+  <section class="close-button">
+    <a href="../../"></a>
+  </section>
+
+  <section class="gallery">
+    {{ range .Page.Resources.ByType "image" }}
+    {{ $thumb := .Resize "400x400"}}
+    <img src="{{$thumb.Permalink}}" alt="" srcset="">
+    {{end}}
+  </section>
+
+  <section class="content">
+    {{.Content}}
+  </section>
+
+</main>
+
+
+{{ end }}
