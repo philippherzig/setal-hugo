@@ -29,7 +29,7 @@ figure {
   --button-hover-color: #45a049;
   --background-color: white;
   --conent-side-margin: 40px;
-  --content-max-width: 800px;
+  --content-max-width: 600px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,7 +41,7 @@ figure {
     --button-hover-color: #45a049;
     --background-color: white;
     --conent-side-margin: 40px;
-    --content-max-width: 800px;
+    --content-max-width: 600px;
   }
 }
 

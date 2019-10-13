@@ -2,41 +2,34 @@
 /* == Detail / Single Page == */
 
 main {
-  display: grid;
-  justify-content: center
+  max-width: calc(var(--content-max-width) + var(--conent-side-margin) + var(--conent-side-margin));
+  margin: auto;
+  width: 100%;
 }
 
-.title h1 {
+main header {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+}
+
+main header .title h1 {
   font-size: 3.3em;
   margin-bottom: 0px;
-  margin-left: var(--conent-side-margin);
-  margin-right: var(--conent-side-margin);
-  max-width: var(--content-max-width);
 }
 
-.title .location {
+main header .title .location {
   color: var(--font-color-secondary);
   font-size: 1.3em;
-  margin-left: var(--conent-side-margin);
-  margin-right: var(--conent-side-margin);
   margin-bottom: 40px;
-  max-width: var(--content-max-width);
 }
 
-.close-button {
-  position: absolute;
-  top: 40px;
-  right: 60px;
-}
-
-.close-button a {
+main header a.close {
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
-.close-button a:before,
-.close-button a:after {
+main header a.close:before, main header a.close:after {
   grid-column: 1/2;
   grid-row: 1/2;
   content: '';
@@ -45,17 +38,15 @@ main {
   background-color: var(--font-color);
 }
 
-.close-button a:before {
+main header a.close:before {
   transform: rotate(45deg);
 }
 
-.close-button a:after {
+main header a.close:after {
   transform: rotate(-45deg);
 }
 
 .gallery {
-  margin-left: var(--conent-side-margin);
-  margin-right: var(--conent-side-margin);
   margin-bottom: var(--conent-side-margin);
   max-width: var(--content-max-width);
   display: grid;
@@ -69,10 +60,15 @@ main {
 
 
 .content {
-  margin-left: var(--conent-side-margin);
-  margin-right: var(--conent-side-margin);
   margin-bottom: var(--conent-side-margin);
   max-width: var(--content-max-width);
+}
+
+main header,
+main .content,
+main .gallery {
+  margin-left: var(--conent-side-margin);
+  margin-right: var(--conent-side-margin);
 }
 
 </style>
