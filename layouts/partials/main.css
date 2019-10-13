@@ -91,6 +91,7 @@ a {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 300;
+  font-display: auto;
   src: local('Fira Sans Light'), local('FiraSans-Light'),
     url('/fonts/fira-sans-v10-latin-300.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -103,6 +104,7 @@ a {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
+  font-display: auto;
   src: local('Fira Sans Regular'), local('FiraSans-Regular'),
     url('/fonts/fira-sans-v10-latin-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -115,6 +117,7 @@ a {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 500;
+  font-display: auto;
   src: local('Fira Sans Medium'), local('FiraSans-Medium'),
     url('/fonts/fira-sans-v10-latin-500.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -127,6 +130,7 @@ a {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 600;
+  font-display: auto;
   src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'),
     url('/fonts/fira-sans-v10-latin-600.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -139,6 +143,7 @@ a {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 700;
+  font-display: auto;
   src: local('Fira Sans Bold'), local('FiraSans-Bold'),
     url('/fonts/fira-sans-v10-latin-700.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
@@ -151,6 +156,7 @@ a {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 800;
+  font-display: auto;
   src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'),
     url('/fonts/fira-sans-v10-latin-800.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
