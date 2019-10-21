@@ -9,18 +9,24 @@ main {
 
 main header {
   display: grid;
-  grid-template-columns: 1fr 100px;
+  grid-template-columns: 1fr 50px;
 }
 
 main header .title h1 {
-  font-size: 3.3em;
+  font-size: 2.3em;
   margin-bottom: 0px;
+}
+
+@media (min-width: 800px) {
+  main header .title h1 {
+    font-size: 3.3em;
+  }
 }
 
 main header .title .location {
   color: var(--font-color-secondary);
   font-size: 1.3em;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 main header a.close {
@@ -29,7 +35,8 @@ main header a.close {
   align-items: center;
 }
 
-main header a.close:before, main header a.close:after {
+main header a.close:before,
+main header a.close:after {
   grid-column: 1/2;
   grid-row: 1/2;
   content: '';
