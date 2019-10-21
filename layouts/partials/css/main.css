@@ -127,7 +127,6 @@ a {
 .contact {
   display: grid;
   grid-column-gap: 70px;
-  grid-row-gap: 30px;
   margin: var(--conent-side-margin);
 }
 

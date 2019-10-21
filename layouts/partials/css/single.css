@@ -67,7 +67,7 @@ main header a.close:after {
 
 
 .content {
-  margin-bottom: var(--conent-side-margin);
+  margin-bottom: 3em;
   max-width: var(--content-max-width);
 }
 
