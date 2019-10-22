@@ -1,27 +1,4 @@
 {{ define "main" }}
-{{ partial "css/single.css" . }}
-
-<main>
-  <header>
-    <div class="title">
-        <h1>{{.Title}}</h1>
-        <div class="location">{{.Params.location}}</div>
-    </div>
-    <a class="close" href="../../"></a>  
-  </header>
-
-  <section class="gallery">
-    {{ range .Page.Resources.ByType "image" }}
-    {{ $thumb := .Resize "400x400"}}
-    <img src="{{$thumb.Permalink}}" alt="" srcset="">
-    {{end}}
-  </section>
-
-  <section class="content">
-    {{.Content}}
-  </section>
-
-</main>
-
-
+  {{ partial "components/references-title.html" . }}
+  {{ partial "components/references-body.html" . }}
 {{ end }}

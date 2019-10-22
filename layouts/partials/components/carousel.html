@@ -1,0 +1,45 @@
+<style>
+  .carousel .background {
+    background-image: url("../img/bg_gallery.svg");
+    background-size: 100% 100%;
+    height: 350px;
+  }
+
+  .carousel .slider {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 20px;
+    height: 350px;
+    align-items: center;
+  }
+
+  .carousel .slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel .slider figure {
+    padding-right: 20px;
+  }
+
+  .carousel .slider figure img {
+    border-radius: 20px;
+  }
+</style>
+
+<section class="carousel">
+  <div class="background">
+    <div class="slider">
+      {{ range .Pages }}
+      {{ $mainImage := index (.Page.Resources.ByType "image") 0 }}
+      {{ $thumb := $mainImage.Fill "300x220"}}
+      <a href="{{ .Permalink }}">
+        <figure>
+          <img src="{{ $thumb.Permalink }}" alt="{{.Title}}" />
+        </figure>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>

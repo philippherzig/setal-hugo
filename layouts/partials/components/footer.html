@@ -1,0 +1,87 @@
+<style>
+  .footer {
+    display: grid;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  }
+
+  .contact {
+    display: grid;
+    grid-column-gap: 70px;
+    margin: var(--conent-side-margin);
+  }
+
+  @media (min-width: 800px) {
+    .contact {
+      grid-template-columns: 3fr 1fr;
+      max-width: var(--content-max-width);
+    }
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  form {
+    display: flex;
+    max-width: 500px;
+  }
+
+  input {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  input[type=text],
+  select {
+    width: 70%;
+    border-radius: 8px 0 0 8px;
+    box-sizing: border-box;
+    background-color: rgb(132, 150, 149), 238, 236);
+  }
+
+  input[type=submit] {
+    width: 30%;
+    max-width: 150px;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: var(--button-hover-color);
+  }
+</style>
+
+<section class="footer">
+  <div class="contact">
+    <div>
+      <h2>Kontakt</h2>
+      <p>Bitte hinterlassen Sie uns eine Nachricht oder rufen Sie uns direkt an! Wir freuen uns über jede
+        Anfrage und
+        rufen auch gerne zurück.</p>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" placeholder="E-Mail oder Telefonnummer" name="name">
+        <input type="submit" value="Senden">
+      </form>
+    </div>
+    <div>
+      <h2>Adresse</h2>
+      <address>
+        Setal AG</br>
+        Nordstrasse 4</br>
+        8620 Wetzikon</br>
+        <a href="mailto:info@setalag.ch">info@setalag.ch</a></br>
+        <a href="tel:+41765841673">+ 41 76 584 16 73</a></br>
+        <a href="tel:+41442422244">+ 41 44 242 22 44</a></br>
+      </address>
+    </div>
+  </div>
+</section>

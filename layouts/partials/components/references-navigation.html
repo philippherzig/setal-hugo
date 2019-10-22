@@ -1,0 +1,28 @@
+<style>
+  .reference-nav .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .reference-nav .button:hover {
+    background-color: green;
+  }
+</style>
+
+<section class="reference-nav">
+  <button class="button">
+    {{with .Site.RegularPages.Prev . }}
+    {{.RelPermalink}}
+    {{end}}
+  </button>
+  <button class="button">
+    {{with .Site.RegularPages.Next . }}
+    {{.RelPermalink}}
+    {{end}}
+  </button>
+</section>

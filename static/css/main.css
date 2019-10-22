@@ -1,4 +1,3 @@
-<style>
 /* == Fixes == */
 
 html {
@@ -116,66 +115,3 @@ a {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* == Footer == */
-
-.footer {
-  display: grid;
-  justify-content: center;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-}
-
-.contact {
-  display: grid;
-  grid-column-gap: 70px;
-  margin: var(--conent-side-margin);
-}
-
-@media (min-width: 800px) {
-  .contact {
-    grid-template-columns: 3fr 1fr;
-    max-width: var(--content-max-width);
-  }
-}
-
-address {
-  font-style: normal;
-}
-
-form {
-  display: flex;
-  max-width: 500px;
-}
-
-input {
-  font-family: inherit;
-  font-size: inherit;
-  border: none;
-  padding: 20px 20px;
-  margin-bottom: 20px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-input[type=text],
-select {
-  width: 70%;
-  border-radius: 8px 0 0 8px;
-  box-sizing: border-box;
-  background-color: rgb(132, 150, 149), 238, 236);
-}
-
-input[type=submit] {
-  width: 30%;
-  max-width: 150px;
-  background-color: var(--button-color);
-  color: white;
-  border-radius: 0 8px 8px 0;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: var(--button-hover-color);
-}
-
-</style>

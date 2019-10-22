@@ -1,0 +1,19 @@
+<style>
+  .logo {
+    display: grid;
+    justify-content: center;
+    margin: 40px 20px 40px 20px;
+    height: 100px;
+  }
+
+  .logo svg {
+    width: 440px;
+    max-width: 100%;
+  }
+</style>
+
+<header class="logo">
+  <picture>
+    {{ partial "svg/logo.svg" . }}
+  </picture>
+</header>

@@ -2,19 +2,21 @@
 <html lang="{{.Site.LanguageCode}}">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1" />
   <meta name="robots" content="”index,follow”" />
   <link rel="canonical" href="{{.Permalink}}" />
-  {{ partial "css/main.css" . }}
+  <link rel="stylesheet" href="/css/main.css" media="print" onload="this.media='all'">
   {{ partial "metadata.html" . }}
   {{ partial "favicons.html" . }}
 </head>
 
 <body>
-  {{ block "main" . }} {{ end }}
-  {{ partial "footer.html" . }}
+  <main>
+    {{ block "main" . }}
+    {{ end }}
+  </main>
+  {{ partial "components/footer.html" . }}
 </body>
 
 </html>
