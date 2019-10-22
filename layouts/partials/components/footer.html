@@ -75,12 +75,18 @@
     <div>
       <h2>Adresse</h2>
       <address>
-        Setal AG</br>
-        Nordstrasse 4</br>
-        8620 Wetzikon</br>
-        <a href="mailto:info@setalag.ch">info@setalag.ch</a></br>
-        <a href="tel:+41765841673">+ 41 76 584 16 73</a></br>
-        <a href="tel:+41442422244">+ 41 44 242 22 44</a></br>
+        {{ .Site.Data.meta.company }}</br>
+        {{ .Site.Data.meta.address }}</br>
+        {{ .Site.Data.meta.city }}</br>
+        <a href="mailto:{{ .Site.Data.meta.mail }}">
+          {{ .Site.Data.meta.mail }}
+        </a></br>
+        <a href="tel:{{ .Site.Data.meta.phone_mobile }}">
+          {{ .Site.Data.meta.phone_mobile }}
+        </a></br>
+        <a href="tel:{{ .Site.Data.meta.phone_business }}">
+          {{ .Site.Data.meta.phone_business }}
+        </a></br>
       </address>
     </div>
   </div>

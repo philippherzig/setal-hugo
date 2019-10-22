@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Corporation",
+    "name": "{{ .Site.Data.meta.company }}",
+    "url": "{{ .Site.BaseURL }}",
+    "logo": "{{ .Site.Data.meta.logo }}",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "{{ .Site.Data.meta.phone_mobile }}",
+      "contactType": "customer service"
+    }, {
+      "@type": "ContactPoint",
+      "telephone": "{{ .Site.Data.meta.phone_mobile }}",
+      "contactType": "sales"
+    }]
+  }
+</script>

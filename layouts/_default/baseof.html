@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1" />
   <meta name="robots" content="”index,follow”" />
   <link rel="canonical" href="{{.Permalink}}" />
-  <link rel="stylesheet" href="/css/main.css" media="print" onload="this.media='all'">
   {{ partial "css/main.css.html" . }}
-  {{ partial "metadata.html" . }}
-  {{ partial "favicons.html" . }}
+  {{ partial "head/metadata.html" . }}
+  {{ partial "head/favicons.html" . }}
+  {{ partial "head/schema-org.html" . }}
 </head>
 
 <body>

@@ -1,17 +1,17 @@
 <!-- Optional meta tags -->
-<title>{{.Site.Title}}</title>
+<title>{{.Title}}</title>
 <meta name="description" content="{{.Site.Data.meta.description}}" />
 <meta name="author" content="{{.Site.Data.meta.author}}" />
 <meta name="publisher" content="{{.Site.Data.meta.author}}" />
 <meta name="copyright" content="{{.Site.Data.meta.author}}" />
-<meta itemprop="name" content="{{.Site.Title}}" />
+<meta itemprop="name" content="{{.Title}}" />
 <meta itemprop="description" content="{{.Site.Data.meta.description}}" />
 <meta name="keywords" content="{{.Site.Data.meta.keywords}}" />
 <meta name="page-topic" content="{{.Site.Data.meta.pageTopic}}" />
 
 <!-- Twitter tags -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="{{.Site.Title}}" />
+<meta name="twitter:title" content="{{.Title}}" />
 <meta
   name="twitter:description"
   content="{{.Site.Data.meta.description}}"
@@ -19,12 +19,12 @@
 <meta name="twitter:creator" content="{{.Site.Data.meta.author}}" />
 
 <!-- Open Graph tags -->
-<meta property="og:title" content="{{.Site.Title}}" />
+<meta property="og:title" content="{{.Title}}" />
 <meta property="og:site_name" content="{{.Site.Title}}" />
 <meta
   property="og:image"
-  content="https://res.cloudinary.com/dvb7dgqcv/image/upload/v1554981774/setal/logo/logo_setalag.png"
+  content="{{.Site.Data.meta.logo}}"
 />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="{{.Site.BaseURL}}" />
+<meta property="og:url" content="{{.Permalink}}" />
 <meta property="og:description" content="{{.Site.Data.meta.description}}" />
