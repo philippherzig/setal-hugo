@@ -1,28 +1,73 @@
 <style>
-  .reference-nav .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+  .reference-nav {
+    margin-left: var(--conent-side-margin);
+    margin-right: var(--conent-side-margin);
+    max-width: var(--content-max-width);
+    margin-bottom: 3em;
   }
 
-  .reference-nav .button:hover {
-    background-color: green;
+  .references {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+
+  .references .card {
+    text-decoration: none;
+    position: relative;
+  }
+
+  .references img {
+    width: 100%;
+  }
+
+  .references .caption {
+    position: absolute;
+    background-color: var(--background-color);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    bottom: 0em;
+    left: 0em;
+  }
+
+  .references .caption h3 {
+    color: var(--font-color);
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+
+  .references .caption .location {
+    color: var(--font-color-secondary);
+    margin-bottom: 5px;
   }
 </style>
 
 <section class="reference-nav">
-  <button class="button">
+  <h2>Weitere Referenzen</h2>
+  <div class="references">
     {{with .Site.RegularPages.Prev . }}
-    {{.RelPermalink}}
+    {{ $mainImage := index (.Page.Resources.ByType "image") 0 }}
+    {{ $thumb := $mainImage.Resize "400x400"}}
+    <a class="card" href="{{.RelPermalink}}">
+      <img src="{{$thumb.Permalink}}" alt="{{.Title}}">
+      <div class="caption">
+        <h3>{{.Title}}</h3>
+        <div class="location">{{.Params.location}}</div>
+      </div>
+    </a>
     {{end}}
-  </button>
-  <button class="button">
     {{with .Site.RegularPages.Next . }}
-    {{.RelPermalink}}
+    {{ $mainImage := index (.Page.Resources.ByType "image") 0 }}
+    {{ $thumb := $mainImage.Resize "400x400"}}
+    <a class="card" href="{{.RelPermalink}}">
+      <img src="{{$thumb.Permalink}}" alt="{{.Title}}">
+      <div class="caption">
+        <h3>{{.Title}}</h3>
+        <div class="location">{{.Params.location}}</div>
+      </div>
+    </a>
     {{end}}
-  </button>
+    </button>
+  </div>
 </section>
