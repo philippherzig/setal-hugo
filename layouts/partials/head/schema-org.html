@@ -1,18 +1,22 @@
+
+
+
+
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
-    "@type": "Corporation",
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
     "name": "{{ .Site.Data.meta.company }}",
+    "image": "https://setalag.ch/img/setal-logo.jpg",
+    "@id": "{{ .Site.BaseURL }}",
     "url": "{{ .Site.BaseURL }}",
-    "logo": "{{ .Site.Data.meta.logo }}",
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "telephone": "{{ .Site.Data.meta.phone_mobile }}",
-      "contactType": "customer service"
-    }, {
-      "@type": "ContactPoint",
-      "telephone": "{{ .Site.Data.meta.phone_mobile }}",
-      "contactType": "sales"
-    }]
+    "telephone": "+41 76 584 16 73",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ .Site.Data.meta.address }}",
+      "addressLocality": "{{ .Site.Data.meta.city }}",
+      "postalCode": "{{ .Site.Data.meta.postalCode }}",
+      "addressCountry": "CH"
+    } 
   }
-</script>
+  </script>
