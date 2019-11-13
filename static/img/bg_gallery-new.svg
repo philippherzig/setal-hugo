@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1002px" height="393px" viewBox="0 0 1002 393" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Slider</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E3E3E3" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E3A323" stop-opacity="0.4" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Slider" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Background" transform="translate(-49.000000, 0.000000)">
+            <path d="M35.8981169,109.698853 L1055.89812,4.54648757 C1077.87304,2.28108011 1097.52372,18.258803 1099.78913,40.2337306 C1099.92962,41.5965115 1100,42.9656103 1100,44.3356137 L1100,353 C1100,375.09139 1082.09139,393 1060,393 L40,393 C17.90861,393 2.705415e-15,375.09139 0,353 L0,149.487979 C4.59450593e-15,128.98475 15.5029774,111.801399 35.8981169,109.698853 Z" id="Rectangle-Copy-8" fill="url(#linearGradient-1)"></path>
+            <path d="M143.625582,93.3366275 L786.625582,6.15231341 C808.516659,3.18410421 828.669092,18.5241193 831.637301,40.4151962 C831.878826,42.196484 832,43.992027 832,45.7896144 L832,338.082003 C832,360.173393 814.09139,378.082003 792,378.082003 C790.199906,378.082003 788.401866,377.960491 786.61814,377.718295 L143.61814,290.411027 C123.788572,287.718546 109,270.786262 109,250.774736 L109,132.973928 C109,112.959546 123.792679,96.025769 143.625582,93.3366275 Z" id="Rectangle-Copy-9" fill="url(#linearGradient-2)" transform="translate(470.500000, 191.940147) scale(-1, 1) translate(-470.500000, -191.940147) "></path>
+        </g>
+        <g id="Background-Copy" transform="translate(-49.000000, 0.000000)" fill="url(#linearGradient-1)">
+            <path d="M35.8981169,109.698853 L1055.89812,4.54648757 C1077.87304,2.28108011 1097.52372,18.258803 1099.78913,40.2337306 C1099.92962,41.5965115 1100,42.9656103 1100,44.3356137 L1100,353 C1100,375.09139 1082.09139,393 1060,393 L40,393 C17.90861,393 2.705415e-15,375.09139 0,353 L0,149.487979 C4.59450593e-15,128.98475 15.5029774,111.801399 35.8981169,109.698853 Z" id="Rectangle-Copy-8"></path>
+        </g>
+    </g>
+</svg>
