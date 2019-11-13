@@ -22,13 +22,20 @@
   }
 
   .references-grid .caption {
-    position: absolute;
-    background-color: var(--background-color);
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 0.5em;
-    bottom: 0em;
-    left: 0em;
+      display: none;
+    }
+
+  @media (min-width: 800px) {
+    .references-grid .caption {
+      display: block;
+      position: absolute;
+      background-color: var(--background-color);
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-bottom: 0.5em;
+      bottom: 0em;
+      left: 0em;
+    }
   }
 
   .references-grid .caption h3 {
