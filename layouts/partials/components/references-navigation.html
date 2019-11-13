@@ -1,28 +1,64 @@
 <style>
-  .reference-nav .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+  .reference-nav {
+    margin-left: var(--conent-side-margin);
+    margin-right: var(--conent-side-margin);
+    max-width: var(--content-max-width);
+    margin-bottom: 3em;
   }
 
-  .reference-nav .button:hover {
-    background-color: green;
+  .references-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .references-grid .card {
+    text-decoration: none;
+    position: relative;
+  }
+
+  .references-grid img {
+    width: 100%;
+  }
+
+  .references-grid .caption {
+    position: absolute;
+    background-color: var(--background-color);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    bottom: 0em;
+    left: 0em;
+  }
+
+  .references-grid .caption h3 {
+    color: var(--font-color);
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+
+  .references-grid .caption .location {
+    color: var(--font-color-secondary);
+    margin-bottom: 5px;
   }
 </style>
 
 <section class="reference-nav">
-  <button class="button">
-    {{with .Site.RegularPages.Prev . }}
-    {{.RelPermalink}}
-    {{end}}
-  </button>
-  <button class="button">
-    {{with .Site.RegularPages.Next . }}
-    {{.RelPermalink}}
-    {{end}}
-  </button>
+  <h2>Weitere Referenzen</h2>
+  <div class="references-grid">
+    {{ $related := .Site.RegularPages.Related . | first 2 }}
+    {{ with $related }}
+    {{ range . }}
+    {{ $mainImage := index (.Page.Resources.ByType "image") 0 }}
+    {{ $thumb := $mainImage.Resize "400x400"}}
+    <a class="card" href="{{.RelPermalink}}">
+      <img src="{{$thumb.Permalink}}" alt="{{.Title}}">
+      <div class="caption">
+        <h3>{{.Title}}</h3>
+        <div class="location">{{.Params.location}}</div>
+      </div>
+    </a>
+    {{ end }}
+    {{ end }}
+  </div>
 </section>
