@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1002px" height="452px" viewBox="0 0 1002 452" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Footer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E3E3E3" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E3A323" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M103.888222,196.090985 L1060.88822,48.1293361 C1082.72021,44.7538945 1103.15488,59.7158854 1106.53032,81.5478781 C1106.84298,83.5701246 1107,85.6133819 1107,87.6596558 L1107,441 C1107,463.09139 1089.09139,481 1067,481 L110,481 C87.90861,481 70,463.09139 70,441 L70,235.621305 C70,215.88977 84.3883754,199.105854 103.888222,196.090985 Z" id="Rectangle-Copy-8" fill="url(#linearGradient-1)"></path>
+        <path d="M-37.9602754,502.662652 L422.955508,15.9141887 C438.14502,-0.126641351 463.462215,-0.816770772 479.503045,14.3727415 C487.480785,21.9270872 492,32.4303109 492,43.4172336 L492,523 C492,545.09139 474.09139,563 452,563 L-24.5944737,563 C-38.0388,563 -48.9375798,552.10122 -48.9375798,538.656894 C-48.9375798,538.636114 -48.9375532,538.615334 -48.9375,538.594554 L-48.9156522,530.063261 C-48.8895412,519.867271 -44.9708173,510.066109 -37.9602754,502.662652 Z" id="Rectangle-Copy-9" fill="url(#linearGradient-2)" transform="translate(221.500000, 253.000000) scale(-1, 1) translate(-221.500000, -253.000000) "></path>
+    </g>
+</svg>
