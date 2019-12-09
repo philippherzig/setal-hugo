@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1000px" height="500px" viewBox="0 0 1000 500" version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
     <title>Footer</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -14,8 +14,7 @@
         </linearGradient>
     </defs>
     <g id="Footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <polygon id="Rectangle-Copy-8" fill="url(#linearGradient-1)" points="-4.80171458e-15 50 1000 1.70530257e-13 1000 500 -5.68434189e-14 496.516969"></polygon>
-        <polygon id="Rectangle-Copy-9" fill="url(#linearGradient-2)" transform="translate(222.036856, 253.000000) scale(-1, 1) translate(-222.036856, -253.000000) " points="-1.70530257e-13 506 442.073712 2.27373675e-13 444.073712 500"></polygon>
-        <g id="Group" transform="translate(147.000000, 120.000000)"></g>
+        <polygon id="Rectangle-Copy-8" fill="url(#linearGradient-1)" points="-4.80171458e-15 50 1000 1.70530257e-13 1000 500 -5.68434189e-14 500"></polygon>
+        <polygon id="Rectangle-Copy-9" fill="url(#linearGradient-2)" transform="translate(222.202242, 250.000000) scale(-1, 1) translate(-222.202242, -250.000000) " points="3.94710472e-13 500 444.404484 2.27373675e-13 444.404484 500"></polygon>
     </g>
 </svg>

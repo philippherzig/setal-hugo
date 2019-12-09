@@ -2,8 +2,12 @@
   .logo {
     display: grid;
     justify-content: center;
-    margin: 40px 20px 40px 20px;
-    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .logo .logospace{
+    height: 40px;
   }
 
   .logo svg {
@@ -12,8 +16,10 @@
   }
 </style>
 
-<header class="logo">
+<section class="logo">
+  <div class="logospace"></div>
   <picture>
     {{ partial "svg/logo.svg" . }}
   </picture>
-</header>
+  <div class="logospace"></div>
+</section>
