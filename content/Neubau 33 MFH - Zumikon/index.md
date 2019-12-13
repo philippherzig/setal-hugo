@@ -1,5 +1,5 @@
 ---
 title: "Neubau 33 MFH"
 location: "Zumikon"
-keywords: "work,reference,neubau,mfh"
+keywords: "work,reference"
 ---

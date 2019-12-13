@@ -2,93 +2,88 @@
   .footer {
     display: grid;
     justify-content: center;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    text-align: center;
+    background-image: url("../img/bg_footer.svg");
+    background-size: 100% 100%;
   }
 
-  .contact {
-    display: grid;
-    grid-column-gap: 70px;
-    margin: var(--conent-side-margin);
+  .footer .footer-content {
+    width: 80vw;
+    max-width: 600px;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 
-  @media (min-width: 800px) {
-    .contact {
-      grid-template-columns: 3fr 1fr;
-      max-width: var(--content-max-width);
+  .footer .footer-content h2 {
+    font-size: 2em;
+  }
+
+  @media (min-width: 700px) {
+    .footer .footer-content h2 {
+      font-size: 2.5em;
     }
   }
 
-  address {
-    font-style: normal;
+  .footer .footer-content hr {
+    border-top: 4px solid var(--setal-gold-color);
+    width: 50px;
+    margin-top: -10px;
   }
 
-  form {
-    display: flex;
-    max-width: 500px;
+  .footer .footer-content p {
+    margin-top: 30px;
   }
 
-  input {
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    padding: 20px 20px;
-    margin-bottom: 20px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  .footer .footer-content .contact-buttons {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 
-  input[type=text],
-  select {
-    width: 70%;
-    border-radius: 8px 0 0 8px;
-    box-sizing: border-box;
-    background-color: rgb(132, 150, 149), 238, 236);
+  @media (max-width: 600px) {
+    .footer .footer-content .contact-buttons {
+      grid-template-columns: 1fr;
+    }
   }
 
-  input[type=submit] {
-    width: 30%;
-    max-width: 150px;
+  .footer .footer-content .contact-buttons a {
     background-color: var(--button-color);
     color: white;
-    border-radius: 0 8px 8px 0;
-    cursor: pointer;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+
   }
 
-  input[type=submit]:hover {
-    background-color: var(--button-hover-color);
+  .footer .footer-content .contact-buttons a span {
+    fill: white;
+    float: left;
+    width: 20px;
+    height: 20px;
   }
 </style>
 
 <section class="footer">
-  <div class="contact">
-    <div>
-      <h2>Kontakt</h2>
-      <p>Bitte hinterlassen Sie uns eine Nachricht oder rufen Sie uns direkt an! Wir freuen uns über jede
-        Anfrage und
-        rufen auch gerne zurück.</p>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="text" placeholder="E-Mail oder Telefonnummer" name="name">
-        <input type="submit" value="Senden">
-      </form>
-    </div>
-    <div>
-      <h2>Adresse</h2>
-      <address>
-        {{ .Site.Data.meta.company }}</br>
-        {{ .Site.Data.meta.address }}</br>
-        {{ .Site.Data.meta.postalCode }}
-        {{ .Site.Data.meta.city }}</br>
-        <a href="mailto:{{ .Site.Data.meta.mail }}">
-          {{ .Site.Data.meta.mail }}
-        </a></br>
-        <a href="tel:{{ .Site.Data.meta.phone_mobile }}">
-          {{ .Site.Data.meta.phone_mobile }}
-        </a></br>
-        <a href="tel:{{ .Site.Data.meta.phone_business }}">
-          {{ .Site.Data.meta.phone_business }}
-        </a></br>
-      </address>
+  <div class="footer-content">
+    <h2>Kontaktieren Sie uns</h2>
+    <hr>
+    <p>Wir freuen uns über jede Anfrage und rufen Sie auch gerne zurück.</p>
+    <div class="contact-buttons">
+      <a href="https://wa.me/{{ .Site.Data.meta.phone_mobile }}">
+        <span>{{ partial "svg/whatsapp.svg" . }}</span>
+        Whatsapp</a>
+      <a href="mailto:{{ .Site.Data.meta.mail }}">
+        <span>{{ partial "svg/envelope.svg" . }}</span>
+        E-Mail</a>
+      <a href="tel:{{ .Site.Data.meta.phone_mobile }}">
+        <span>{{ partial "svg/phone.svg" . }}</span>
+        Telefon</a>
     </div>
   </div>
+
 </section>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="570px" viewBox="0 0 1000 570" version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Slider Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="20.6868042%" y1="33.755%" x2="100%" y2="66.245%" id="linearGradient-1">
+            <stop stop-color="#EBEBEB" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Slider-Copy-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Rectangle-Copy-4" fill="url(#linearGradient-1)" transform="translate(500.000000, 285.000000) scale(-1, 1) translate(-500.000000, -285.000000) " points="1000 570 -5.05671893e-13 528.933718 0 0 1000 0"></polygon>
+    </g>
+</svg>

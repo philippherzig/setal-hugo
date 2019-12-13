@@ -1,9 +1,15 @@
 <style>
   .reference-nav {
-    margin-left: var(--conent-side-margin);
-    margin-right: var(--conent-side-margin);
-    max-width: var(--content-max-width);
-    margin-bottom: 3em;
+    margin: auto;
+    width: 90vw;
+    margin-bottom: 5em;
+    margin-top: 5em;
+  }
+
+  @media (min-width: 800px) {
+    .reference-nav {
+      width: var(--content-max-width);
+    }
   }
 
   .references-grid {
@@ -53,7 +59,7 @@
 <section class="reference-nav">
   <h2>Weitere Referenzen</h2>
   <div class="references-grid">
-    {{ $related := .Site.RegularPages.Related . | first 2 }}
+    {{ $related := shuffle (.Site.RegularPages.Related .) | first 2 }}
     {{ with $related }}
     {{ range . }}
     {{ $mainImage := index (.Page.Resources.ByType "image") 0 }}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="500px" viewBox="0 0 1000 500" version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Footer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E3E3E3" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E3A323" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Rectangle-Copy-8" fill="url(#linearGradient-1)" points="-4.80171458e-15 50 1000 1.70530257e-13 1000 500 -5.68434189e-14 500"></polygon>
+        <polygon id="Rectangle-Copy-9" fill="url(#linearGradient-2)" transform="translate(222.202242, 250.000000) scale(-1, 1) translate(-222.202242, -250.000000) " points="3.94710472e-13 500 444.404484 2.27373675e-13 444.404484 500"></polygon>
+    </g>
+</svg>

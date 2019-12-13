@@ -1,5 +1,8 @@
-{{ define "main" }}
+{{ define "header" }}
   {{ partial "components/logo.html" . }}
   {{ partial "components/carousel.html" . }}
+{{ end }}
+
+{{ define "main" }}
   {{ partial "components/lead.html" . }}
 {{ end }}

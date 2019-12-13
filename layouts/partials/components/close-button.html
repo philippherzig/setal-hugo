@@ -1,0 +1,34 @@
+<style>
+  a.close {
+    display: none;
+  }
+
+  @media (min-width: 600px) {
+    a.close {
+      display: grid;
+      position: absolute;
+      top: 3.5em;
+      right: 5em;
+    }
+  }
+
+  a.close:before,
+  a.close:after {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    content: '';
+    height: 33px;
+    width: 4px;
+    background-color: var(--font-color);
+  }
+
+  a.close:before {
+    transform: rotate(45deg);
+  }
+
+  a.close:after {
+    transform: rotate(-45deg);
+  }
+</style>
+
+<a class="close" href="../../"></a>

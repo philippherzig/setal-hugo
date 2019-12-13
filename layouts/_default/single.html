@@ -1,5 +1,10 @@
-{{ define "main" }}
+{{ define "header" }}
+  {{ partial "components/close-button.html" . }}
   {{ partial "components/references-title.html" . }}
+  
+{{ end }}
+
+{{ define "main" }}
   {{ partial "components/references-body.html" . }}
   {{ partial "components/references-navigation.html" . }}
 {{ end }}

@@ -13,6 +13,10 @@
 </head>
 
 <body>
+  <header>
+    {{ block "header" . }}
+    {{ end }}
+  </header>
   <main>
     {{ block "main" . }}
     {{ end }}
