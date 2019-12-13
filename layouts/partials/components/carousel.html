@@ -1,28 +1,13 @@
 <style>
-  :root {
-    --carousel-height: 40vh;
-  }
-
-  .carousel .background {
-    background-image: url("../img/bg_gallery.svg");
-    background-size: 500px 100%;
-    height: var(--carousel-height);
-  }
-
-  @media (min-width: 500px) {
-    .carousel .background {
-      background-size: 100% 100%;
-    }
-  }
 
   .carousel .slider {
     display: grid;
     grid-auto-flow: column;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
-    padding-left: 20px;
-    height: var(--carousel-height);
+    padding-left: 1em;
     align-items: center;
+    margin-top: 2vh;
   }
 
   .carousel .slider::-webkit-scrollbar {
@@ -34,29 +19,26 @@
   }
 
   .carousel .slider figure {
-    padding-right: 20px;
+    padding-right: 1em;
   }
 
   .carousel .slider figure img {
-    border-radius: 20px;
-    height: 28vh;
-  }
-
-  @media (min-width: 500px) {
-    .carousel .slider figure img {
-      height: 25vh;
-    }
+    border-radius: 1em;
+    height: 26vh;
   }
 
   .carousel .slider figure .hr {
-    width: 2.5em;
-    border: 2px solid var(--setal-gold-color);
+    width: 1.5em;
+    border: 1px solid var(--setal-gold-color);
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    display: none;
   }
 
   figcaption {
     color: var(--font-color-secondary);
+    font-size: 0.9em;
+    display: none;
   }
   
 </style>
