@@ -1,5 +1,5 @@
 ---
 title: "Neubau EFH"
 location: "Schindellegi SZ"
-keywords: "work,reference,neubau,efh"
+keywords: "work,reference"
 ---

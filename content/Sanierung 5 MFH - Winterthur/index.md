@@ -1,5 +1,5 @@
 ---
 title: "Sanierung 5 MFH"
 location: "Winterthur"
-keywords: "work,reference,sanierung,mfh"
+keywords: "work,reference"
 ---
