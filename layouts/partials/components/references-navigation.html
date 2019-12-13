@@ -1,9 +1,15 @@
 <style>
   .reference-nav {
-    margin-left: var(--conent-side-margin);
-    margin-right: var(--conent-side-margin);
-    max-width: var(--content-max-width);
-    margin-bottom: 3em;
+    margin: auto;
+    width: 90vw;
+    margin-bottom: 5em;
+    margin-top: 5em;
+  }
+
+  @media (min-width: 800px) {
+    .reference-nav {
+      width: var(--content-max-width);
+    }
   }
 
   .references-grid {
