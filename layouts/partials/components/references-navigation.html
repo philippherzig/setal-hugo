@@ -59,7 +59,7 @@
 <section class="reference-nav">
   <h2>Weitere Referenzen</h2>
   <div class="references-grid">
-    {{ $related := .Site.RegularPages.Related . | first 2 }}
+    {{ $related := shuffle (.Site.RegularPages.Related .) | first 2 }}
     {{ with $related }}
     {{ range . }}
     {{ $mainImage := index (.Page.Resources.ByType "image") 0 }}
